@@ -1,12 +1,67 @@
-# React + Vite
+# BlogApp Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the ReactJS front-end for the BlogApp project. It provides a minimal design with Bootstrap for styling and includes essential pages for user interaction.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home Page**: Welcome page for the application.
+- **Login Page**: Allows users to log in to their accounts.
+- **Register Page**: Enables new users to create an account.
+- **Navbar**: Navigation bar for easy access to different pages.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ReactJS
+- React Router for routing
+- Bootstrap for styling
+
+## Folder Structure
+
+```
+blog-app-client/
+├── public/               # Static assets
+│   └── vite.svg          # Vite logo
+├── src/                  # Source code
+│   ├── components/       # Reusable components
+│   │   ├── Navbar.jsx    # Navigation bar
+│   ├── pages/            # Application pages
+│   │   ├── Home.jsx      # Home page
+│   │   ├── Login.jsx     # Login page
+│   │   ├── Register.jsx  # Register page
+│   ├── App.jsx           # Main application component
+│   ├── main.jsx          # Application entry point
+│   ├── App.css           # Global styles
+│   └── index.css         # Index styles
+├── package.json          # Project dependencies and scripts
+├── vite.config.js        # Vite configuration
+└── README.md             # Project documentation
+```
+
+## Installation
+
+1. Navigate to the `blog-app-client` directory:
+   ```bash
+   cd blog-app-client
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Available Scripts
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the application for production.
+- `npm run preview`: Preview the production build.
+
+## API Integration
+
+This front-end communicates with the BlogApp backend API. Ensure the backend server is running and accessible at the correct URL.
+
+## License
+
+This project is licensed under the MIT License.
